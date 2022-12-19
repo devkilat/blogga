@@ -1,0 +1,195 @@
+/*
+Theme Name: Blogga
+Version: 1.0.0
+Requires at least: 5.0
+Requires PHP: 5.6
+Tested up to: 6.0
+Description: Simple blog theme
+Author: Devkilat
+Author URI: https://devkilat.com
+*/
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+section#header {
+  background-color: #232e52;
+  margin: 1em;
+  border-radius: 12px;
+}
+
+section#header .jumbotron {
+  padding: 10em 0 8em;
+}
+
+section#header .jumbotron span {
+  font-size: 1.2em;
+  color: white;
+  font-weight: 200;
+}
+
+section#header .jumbotron h1 {
+  font-size: 3.25em;
+  color: white;
+  margin: 0;
+  line-height: 120%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 4em 5em;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  padding-left: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+header a.btn {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.35em 1.25em;
+  border-radius: 5px;
+  color: white;
+}
+
+header a.btn:hover {
+  cursor: pointer;
+}
+
+/* Main */
+main {
+  padding-bottom: 5em;
+}
+
+main h2 {
+  padding-top: 2.5em;
+  font-size: 2.25em;
+}
+
+/* Article */
+article {
+  padding: 1.5em 0;
+  border-top: 1px solid #ebf2fe;
+  display: flex;
+  gap: 20px;
+}
+
+article img {
+  width: 300px !important;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+article .content-meta {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+article .content-meta .category {
+  text-transform: uppercase;
+  font-weight: 300;
+  background-color: #ebf2fe;
+  border-radius: 4px;
+  font-size: 0.8em;
+  padding: 10px;
+}
+
+article .content-meta .postdate {
+  font-size: 0.8em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+article h3 {
+  margin-bottom: 10px;
+}
+
+article p {
+  margin-top: 0;
+  font-weight: 300;
+}
+
+/* Subscribe Form */
+#subscribe-form::before {
+  content: "";
+  position: absolute;
+  top: -75px;
+  left: -75px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 30px solid #f7df61;
+}
+#subscribe-form {
+  background-color: #232e52;
+  padding: 5em 0;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 3em;
+  position: relative;
+  overflow: hidden;
+}
+
+#subscribe-form h2,
+#subscribe-form p {
+  color: white;
+}
+
+#subscribe-form h2 {
+  margin-bottom: 5px;
+}
+
+#subscribe-form p {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+#subscribe-form form {
+  display: flex;
+  justify-content: center;
+}
+
+#subscribe-form * {
+  outline: none;
+  border: none;
+}
+
+#subscribe-form input {
+  padding: 10px 15px;
+  font-size: 1em;
+  border-top-left-radius: 10px;
+  min-width: 400px;
+  border-bottom-left-radius: 10px;
+}
+
+#subscribe-form button {
+  background-color: #8ceead;
+  padding: 0 20px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-weight: bold;
+  color: #232e52;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid #232e52;
+  padding: 1em 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 0.8em;
+  font-weight: 500;
+}
